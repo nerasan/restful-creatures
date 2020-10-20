@@ -1,0 +1,14 @@
+<h1>add a new prehistoric creature</h1>
+
+<!-- which route inside index.js do we have written to deal with the payload to be posted -->
+<form action="/prehistoric-creatures" method="POST">
+
+    <!-- name attribute in input tag is the key when you submit -->
+    <label for="creatureType">type</label>
+    <input type="text" name="type" id="creatureType">
+
+    <label for="creatureImage">image (enter url)</label>
+    <input type="text" name="img_url" id="creatureImage">
+
+    <input type="submit">
+</form>

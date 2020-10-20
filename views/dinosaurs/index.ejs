@@ -1,0 +1,16 @@
+<h1>list of dinosaurs</h1>
+
+<!-- GET method sends get request to the route in action and then adds on to the end of the action route and question mark plus the key value pair. the name input tag corresponds to the query string /dinosaurs/?nameFilter=yourinput -->
+<form method="GET" action="/dinosaurs">
+    <label for="nameFilter">filter by name:</label>
+    <input type="text" id="nameFilter" name="nameFilter">
+    <input type="submit">
+</form>
+
+<ul>
+<% dinosaurs.forEach((dino)=>{ %>
+    <li>
+        <%= dino.name %>, <i><%= dino.type %></i>.
+    </li>
+<% }) %>
+</ul>
